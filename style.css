@@ -1,0 +1,68 @@
+body {
+  font-family: sans-serif;
+  background: linear-gradient(90deg, #0FB2EB, #070BEA);
+  padding: 100px;
+}
+
+.sl {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  right: 15%;
+  text-align: center;
+  transform: translateY(-50%);
+  line-height: 60px;
+  color: #dddedf;
+}
+
+span {
+  margin: 10px;
+  opacity: 0;
+  filter: blur(20px);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 70px;
+}
+
+.sl.active span {
+  opacity: 1;
+  filter: blur(0px);
+  transition: 1s;
+}
+
+.active {
+  z-index: 10;
+}
+
+.btn-liquid {
+	display: inline-block;
+	position: relative;
+	width: 240px;
+	height: 60px;
+
+	border-radius: 27px;
+
+	color: #fff;
+	font: 700 14px/60px "Droid Sans", sans-serif;
+	letter-spacing: 0.05em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.btn-liquid .inner {
+	position: relative;
+
+	z-index: auto;
+}
+
+.btn-liquid canvas {
+	position: fixed;
+	top: 400px;
+	right: -50px;
+	bottom: -50px;
+	left: 450px;
+
+	z-index: 1;
+}
